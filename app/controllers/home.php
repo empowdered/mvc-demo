@@ -1,8 +1,12 @@
 <?php
 
-class home extends Controller{
-    
-    function index(){
-        echo 'home/index';
+class Home extends Controller {
+
+    function index($name = '') {
+        $user = $this->model('User');
+        $user->name = $name;
+        //echo $user->name;
+        $this->view('home/index',['name'=>$user->name]);
     }
+
 }
