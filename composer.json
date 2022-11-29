@@ -1,3 +1,16 @@
 {
-    "name": "juanp"
+    "name": "example/mvc-demo",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Example\\MvcDemo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "juan pablo muñoz leiva",
+            "email": "juanp.mleiva@gmail.com"
+        }
+    ],
+    "require": {}
 }
