@@ -12,5 +12,7 @@
             "email": "juanp.mleiva@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/database": "^8.83"
+    }
 }
