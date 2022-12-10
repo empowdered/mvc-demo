@@ -1,16 +1,13 @@
 <?php
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
- */
-
+use Illuminate\Database\Eloquent\Model as Eloquent;
 /**
  * Description of User
  *
  * @author juanp
  */
-class User {
+class User extends Eloquent{
     //put your code here
     public $name;
+    protected $fillable = ['username','email'];
+    public $timestamps = ['created_at','updated_at'];
 }
